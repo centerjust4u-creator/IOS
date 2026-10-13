@@ -1,13 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Center JUST</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #081b3a, #163d6b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 25px;
+    padding: 55px 40px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+h1 {
+    margin: 0;
+    color: #0b1b2a;
+    font-size: 48px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 20px;
+    margin: 12px 0 40px;
+}
+
+.quiz-list {
+    display: grid;
+    gap: 20px;
+}
+
+.quiz {
+    display: block;
+    padding: 22px;
+    background: linear-gradient(135deg, #c9a227, #e6c95c);
+    color: #0b1b2a;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.quiz:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .quiz {
+        font-size: 20px;
+    }
+}
+</style>
 </head>
+
 <body>
-<h1>Center JUST</h1>
-<a href="quiz-1/">Quiz 1</a>
-<br><br>
-<a href="quiz-2/">Quiz 2</a>
+
+<div class="container">
+
+    <h1>Center JUST</h1>
+    <div class="subtitle">Choose your quiz</div>
+
+    <div class="quiz-list">
+        <a class="quiz" href="quiz-1/">Quiz 1</a>
+        <a class="quiz" href="quiz-2/">Quiz 2</a>
+    </div>
+
+</div>
+
 </body>
 </html>
